@@ -5,5 +5,5 @@ from views import hour_ahead
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'time/plus/(\d{1,2})/$', hour_ahead),
+    url(r'time/plus/(\d{1,2})/$', hour_ahead),   #使用url需要另外导入，目前url()才能用正则
 ]
