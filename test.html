@@ -1,0 +1,40 @@
+{% load static %}
+<!doctype html>
+<html lang="zh-hans">
+<head>
+    <meta charset="utf-8">
+    <title>sai  blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+</head>
+
+<style>
+a:visited {color:black;}
+</style>
+
+<body>
+
+<div class="uk-grid uk-grid-width-1-4">
+    <ul>
+        <hr>
+        <li><div class="uk-grid-divider"> <a href="http://127.0.0.1:8000/admin/" >Kotomi 的博客</a></div></li>
+        <hr class="uk-grid-divider">
+        <div class="uk-grid-divider"><a href="http://127.0.0.1:8000/admin/">About Kotomi</a></div>
+        <hr class="uk-grid-divider">
+        <div class="uk-grid-divider"><a href="http://127.0.0.1:8000/admin/">Conntact me</a></div>
+        <hr>
+    </ul>
+</div>
+
+<div class="uk-badge uk-badge-success">...</div>
+<div class="uk-badge uk-badge-warning">...</div>
+<div class="uk-badge uk-badge-danger">...</div>
+
+{% block content %}
+{% endblock %}
+
+
+<!--<img src="{% static 'image/test.jpg' %}" alt='test image'/>-->
+</body>
+</html>
