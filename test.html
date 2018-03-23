@@ -15,21 +15,66 @@ a:visited {color:black;}
 
 <body>
 
-<div class="uk-grid uk-grid-width-1-4">
-    <ul>
-        <hr>
-        <li><div class="uk-grid-divider"> <a href="http://127.0.0.1:8000/admin/" >Kotomi 的博客</a></div></li>
-        <hr class="uk-grid-divider">
-        <div class="uk-grid-divider"><a href="http://127.0.0.1:8000/admin/">About Kotomi</a></div>
-        <hr class="uk-grid-divider">
-        <div class="uk-grid-divider"><a href="http://127.0.0.1:8000/admin/">Conntact me</a></div>
-        <hr>
-    </ul>
+<div class="uk-container uk-container-center">
+    <div class="uk-grid">
+        <ul class="uk-grid uk-grid-width-1-4">
+            <hr>
+            <li><div class="uk-grid-divider"> <a href="http://127.0.0.1:8000/admin/" >Kotomi 的博客</a></div></li>
+            <li><div class="uk-grid-divider"><a href="http://127.0.0.1:8000/admin/">About Kotomi</a></div></li>
+            <li><div class="uk-grid-divider"><a href="http://127.0.0.1:8000/admin/">Conntact me</a></div></li>
+            <hr>
+        </ul>
+    </div>
 </div>
 
-<div class="uk-badge uk-badge-success">...</div>
-<div class="uk-badge uk-badge-warning">...</div>
-<div class="uk-badge uk-badge-danger">...</div>
+<div class="uk-width-1-5@m">
+    <div class="uk-card uk-card-default uk-card-large">
+        <div class="uk-card-media-top">
+            <img class="uk-align-left uk-margin-remove-adjacent" src="{% static 'image/kotomi_cute.jpg' %}" alt="Example image">
+        </div>
+        <div class="uk-card-title">
+            <h3>小琴美</h3>
+        </div>
+        <div class="uk-card-body">
+            <p>是有过几个不错对象,说起来并不寂寞孤单。</p>
+            <p>可能我浪荡 让人家不安。</p>
+            <p>角落那窗口,闻得到玫瑰花香。</p>
+        </div>
+        <div class="uk-card-footer">
+            <p>Read more</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="uk-animation-toggle uk-child-width-1-4@m">
+        <div class="uk-card uk-card-default uk-card-body uk-animation-fade uk-animation-reverse">
+            <p class="uk-text-center">Fade</p>
+        </div>
+</div>
+
+
+<ul uk-accordion>
+    <li class="uk-open">
+        <a class="uk-accordion-title" href="#">Item 1</a>
+        <div class="uk-accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href="#">Item 2</a>
+        <div class="uk-accordion-content">
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href="#">Item 3</a>
+        <div class="uk-accordion-content">
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+        </div>
+    </li>
+</ul>
 
 {% block content %}
 {% endblock %}
@@ -38,3 +83,4 @@ a:visited {color:black;}
 <!--<img src="{% static 'image/test.jpg' %}" alt='test image'/>-->
 </body>
 </html>
+
