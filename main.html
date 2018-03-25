@@ -1,0 +1,22 @@
+{% extends "home.html" %}
+{% load static %}
+
+{% block content %}
+<div class="uk-card-media-top">
+    <img class="uk-align-left uk-margin-remove-adjacent" src="{% static 'image/kotomi_cute.jpg' %}" alt="Example image">
+</div>
+{% if article_list %}
+<div class="uk-card-title">
+        <h3 class="uk-article-title">{{ article_list.title }}</h3>
+</div>
+{% endif %}
+<div class="uk-card-body">
+        <p>{{ article_list.content }}</p>
+</div>
+<div class="uk-card-footer">
+    <p>Read more</p>
+</div>
+ {% endblock %}
+
+
+
