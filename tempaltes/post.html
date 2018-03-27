@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="uk-child-width-1-4@s" uk-grid>
+<div class="uk-align-center uk-padding">
+    <form method="post">
+        <fieldset class="uk-fieldset">
+
+            <legend class="uk-legend">发布博客</legend>
+
+            <div class="uk-margin">
+                <input class="uk-input" type="text" name="new_title" placeholder="标题">
+                <input class="uk-input" type="text" name="new_label" placeholder="标签">
+            </div>
+
+            <div class="uk-margin">
+                <textarea class="uk-textarea" name="new_content" rows="8"></textarea>
+            </div>
+
+            <div class="uk-button uk-button-default">
+                <a  href="#">提交</a>
+            </div>
+
+        </fieldset>
+    </form>
+</div>
+</div>
+{% endblock %}
